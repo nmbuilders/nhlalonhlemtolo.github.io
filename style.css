@@ -1,43 +1,99 @@
-*{ 
-   margin:0;
-   padding:0;
-   box-sizing: border-box;
-   font-family: Arial, sans-serif;
-
-}
-/* Background*/
-body{
-Background:url("bakcgroundview.jpg") no-repeat center center/cover;
-color:black;
-min-height: 100vh;
-}
-/*header*/
-header{
-    padding: 20px;
-    text-align:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-nav a{
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-    text-decoration:none;
-    margin: 0 15px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
     font-weight: bold;
-
-}
-nav a: hover{
-    text-decoration: underline;
-
 }
 
-/*main section*/
-.hero{
-    padding:100px 20px;
-    text-align:center;
-}
-
-/*footer*/
-footer{
+/* Hero */
+.hero {
     text-align: center;
-    padding: 15px;
-    Background: rgba(0, 89, 255, 0.3);
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: #00c6ff;
+    color: black;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    margin: 20px 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.dark {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
 }
